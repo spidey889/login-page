@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="login-container">
@@ -12,7 +13,8 @@
             <h1>Welcome Back</h1>
             <p class="subtitle">Please sign in to your account</p>
             
-            <form class="login-form" action="#" method="POST">
+            <form class="login-form" action="#" method="POST" id="loginForm">
+                <div id="alert-message" class="alert-message"></div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input 
@@ -53,12 +55,6 @@
             </form>
         </div>
     </div>
-    <script>
-        document.getElementById('showPassword').addEventListener('change', function() {
-            const passwordInput = document.getElementById('password');
-            passwordInput.type = this.checked ? 'text' : 'password';
-        });
-    </script>
 </body>
 </html>
 
