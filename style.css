@@ -11,6 +11,17 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(115deg, #ffffff 50%, #8c8bf5 50%);  /* Diagonal split background */
+    position: relative;
+}
+
+.site-name {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 1px;
 }
 
 .login-container {
